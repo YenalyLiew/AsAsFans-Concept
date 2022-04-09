@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@id/bottom_nav">
+    <item
+        android:id="@id/video_fragment"
+        android:icon="@drawable/ic_baseline_smart_display_24"
+        android:title="@string/video" />
+    <item
+        android:id="@id/fan_art_fragment"
+        android:icon="@drawable/ic_baseline_photo_24"
+        android:title="@string/fan_art_pic" />
+    <item
+        android:id="@id/record_fragment"
+        android:icon="@drawable/ic_baseline_headphones_24"
+        android:title="@string/record_studio" />
+    <item
+        android:id="@id/tools_fragment"
+        android:icon="@drawable/ic_baseline_build_24"
+        android:title="@string/tools" />
+</menu>
