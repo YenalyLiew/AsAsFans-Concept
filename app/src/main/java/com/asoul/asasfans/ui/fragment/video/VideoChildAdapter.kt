@@ -17,10 +17,14 @@ class VideoChildAdapter(fragment: Fragment) : FragmentStateAdapter(fragment.requ
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            VideoChildFragmentEnum.FAN_VIDEO_FRAGMENT.ordinal -> VideoChildFragment()
-            VideoChildFragmentEnum.HOT_CUT_VIDEO_FRAGMENT.ordinal -> VideoChildFragment()
-            VideoChildFragmentEnum.NEW_RELEASE_VIDEO_FRAGMENT.ordinal -> VideoChildFragment()
-            VideoChildFragmentEnum.HISTORY_RECOMMEND_VIDEO_FRAGMENT.ordinal -> VideoChildFragment()
+            VideoChildFragmentEnum.FAN_VIDEO_FRAGMENT.ordinal ->
+                VideoChildFragment.newInstance(VideoChildFragmentEnum.FAN_VIDEO_FRAGMENT)
+            VideoChildFragmentEnum.HOT_CUT_VIDEO_FRAGMENT.ordinal ->
+                VideoChildFragment.newInstance(VideoChildFragmentEnum.HOT_CUT_VIDEO_FRAGMENT)
+            VideoChildFragmentEnum.NEW_RELEASE_VIDEO_FRAGMENT.ordinal ->
+                VideoChildFragment.newInstance(VideoChildFragmentEnum.NEW_RELEASE_VIDEO_FRAGMENT)
+            VideoChildFragmentEnum.HISTORY_RECOMMEND_VIDEO_FRAGMENT.ordinal ->
+                VideoChildFragment.newInstance(VideoChildFragmentEnum.HISTORY_RECOMMEND_VIDEO_FRAGMENT)
             else -> throw IndexOutOfBoundsException("out of bounds!")
         }
     }

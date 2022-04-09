@@ -1,25 +1,23 @@
 package com.asoul.asasfans.logic.network
 
+import com.asoul.asasfans.logic.bean.VideoAdvancedSearchBean
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 /**
  * @ProjectName : AsAsFans
  * @Author : Yenaly Liew
- * @Time : 2022/04/06 006 15:42
+ * @Time : 2022/04/09 009 15:40
  * @Description : Description...
  */
 interface VideoService {
 
-    @GET("AsoulRT-FanArt")
-    suspend fun getFanArtVideo(@Query("page") page: Int)
-
-    @GET("AsoulRT-Cut")
-    suspend fun getCutVideo(@Query("page") page: Int)
-
-    @GET("AsoulPudateVedio")
-    suspend fun getLatestVideo(@Query("page") page: Int)
-
-    @GET("AsoulMostViewVedio")
-    suspend fun getMostViewVideo(@Query("page") page: Int)
+    @GET("v2/asoul-video-interface/advanced-search")
+    suspend fun getAsoulVideo(
+        @Query("order") order: String,
+        @Query("page") page: Int,
+        @Query("q") advancedQuery: String? = null,
+        @Query("copyright") copyright: Int? = null,
+        @Query("tname") tname: String? = null
+    ): VideoAdvancedSearchBean
 }
