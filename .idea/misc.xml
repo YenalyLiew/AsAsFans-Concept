@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans-Concept/app/src/main/res/layout/fragment_fan_art.xml" value="0.1265625" />
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans-Concept/app/src/main/res/layout/fragment_video.xml" value="0.1265625" />
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans-Concept/app/src/main/res/layout/fragment_video_child.xml" value="0.1265625" />
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans-Concept/app/src/main/res/layout/item_video.xml" value="0.1265625" />
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans-Concept/app/src/main/res/menu/menu_main.xml" value="0.1265625" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/drawable/ic_baseline_photo_24.xml" value="0.195" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/drawable/ic_danmaku_24.xml" value="0.1715" />

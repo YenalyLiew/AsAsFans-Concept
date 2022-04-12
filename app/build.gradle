@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.asoul.asasfans"
+        applicationId "com.asoul.asasfans_concept"
         minSdk 21
         targetSdk 31
         versionCode 1

@@ -6,18 +6,18 @@
 
     <fragment
         android:id="@+id/video_fragment"
-        android:name="com.asoul.asasfans.ui.fragment.VideoFragment"
+        android:name="com.asoul.asasfans_concept.ui.fragment.VideoFragment"
         android:label="VideoFragment" />
     <fragment
         android:id="@+id/fan_art_fragment"
-        android:name="com.asoul.asasfans.ui.fragment.FanArtFragment"
+        android:name="com.asoul.asasfans_concept.ui.fragment.FanArtFragment"
         android:label="FanArtFragment" />
     <fragment
         android:id="@+id/record_fragment"
-        android:name="com.asoul.asasfans.ui.fragment.RecordFragment"
+        android:name="com.asoul.asasfans_concept.ui.fragment.RecordFragment"
         android:label="RecordFragment" />
     <fragment
         android:id="@+id/tools_fragment"
-        android:name="com.asoul.asasfans.ui.fragment.ToolsFragment"
+        android:name="com.asoul.asasfans_concept.ui.fragment.ToolsFragment"
         android:label="ToolsFragment" />
 </navigation>
