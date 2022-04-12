@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.asoul.asasfans">
 
+    <queries>
+        <package android:name="tv.danmaku.bili" />
+    </queries>
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application

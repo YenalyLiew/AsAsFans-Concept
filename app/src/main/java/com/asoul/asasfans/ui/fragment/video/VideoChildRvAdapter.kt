@@ -40,6 +40,6 @@ class VideoChildRvAdapter(private val fragment: VideoChildFragment) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return VideoChildViewHolder.create(parent, fragment)
+        return VideoChildViewHolder.create(parent, fragment) { position -> getItem(position) }
     }
 }

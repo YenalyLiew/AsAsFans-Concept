@@ -11,15 +11,17 @@
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/drawable/ic_watch_24.xml" value="0.1715" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/drawable/icon_asasf_colorful_logo.xml" value="0.137" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/activity_launch.xml" value="0.1265625" />
-        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/activity_web.xml" value="0.44000000000000006" />
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/fragment_fan_art.xml" value="0.2862190812720848" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/fragment_tools.xml" value="0.34714285714285714" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/fragment_video.xml" value="0.3" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/fragment_video_child.xml" value="0.5" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/fragment_video_fan_art.xml" value="0.1265625" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/fragment_web.xml" value="0.1" />
-        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/item_video.xml" value="0.4576271186440678" />
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/item_fan_art.xml" value="0.268" />
+        <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/layout/item_video.xml" value="0.3" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/menu/menu_bottom_nav.xml" value="0.1265625" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/menu/menu_main.xml" value="0.44000000000000006" />
         <entry key="..\:/Users/wrzg8/AndroidStudioProjects/AsAsFans/app/src/main/res/menu/menu_web.xml" value="0.2" />

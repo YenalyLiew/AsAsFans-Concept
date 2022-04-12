@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fan_art_order">
+        <item>最新发布</item>
+        <item>B站热门</item>
+    </string-array>
+    <string-array name="fan_art_date">
+        <item>无榜单</item>
+        <item>日榜</item>
+        <item>周榜</item>
+        <item>月榜</item>
+    </string-array>
+</resources>

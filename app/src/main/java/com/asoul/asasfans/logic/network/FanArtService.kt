@@ -14,9 +14,9 @@ interface FanArtService {
     @GET("getPic")
     suspend fun getFanArt(
         @Query("page") page: Int,
-        @Query("sort") sort: Int,
-        @Query("part") part: Int,
-        @Query("rank") rank: Int,
-        @Query("ctime") ctime: Int
-    ): ImageDataBean
+        @Query("sort") sort: Int? = null,
+        @Query("part") part: Int? = null,
+        @Query("rank") rank: Int? = null,
+        @Query("ctime") ctime: Long? = null
+    ): List<ImageDataBean>
 }

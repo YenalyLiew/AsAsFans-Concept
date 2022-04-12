@@ -16,7 +16,10 @@ class AsApplication : Application() {
     companion object {
         @SuppressLint("StaticFieldLeak")
         lateinit var context: Context
+
         var showUpdateNotification = true
+
+        const val BILI_PACKAGE_NAME = "tv.danmaku.bili"
     }
 
     override fun onCreate() {

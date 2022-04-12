@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment
 import com.asoul.asasfans.AsApplication
 import com.asoul.asasfans.R
 import com.asoul.asasfans.databinding.FragmentToolsBinding
-import com.asoul.asasfans.ui.activity.MainActivity
 import com.asoul.asasfans.ui.activity.WebActivity
 import com.asoul.asasfans.utils.addToolsItem
 import com.asoul.asasfans.utils.showShortToast

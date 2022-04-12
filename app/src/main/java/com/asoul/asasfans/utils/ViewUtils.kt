@@ -34,6 +34,16 @@ fun View.setMargin(start: Int, top: Int, end: Int, bottom: Int) {
 }
 
 /**
+ * 获取屏幕宽度
+ *
+ * @author Yenaly Liew
+ */
+val screenWidth: Int
+    get() {
+        return AsApplication.context.resources.displayMetrics.widthPixels
+    }
+
+/**
  * dp to px
  *
  * @param dpValue dp value

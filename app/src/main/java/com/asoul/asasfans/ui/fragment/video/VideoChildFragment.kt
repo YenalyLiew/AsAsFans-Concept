@@ -11,6 +11,7 @@ import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.asoul.asasfans.databinding.FragmentVideoChildBinding
+import com.asoul.asasfans.logic.bean.VideoAdvancedSearchBean
 import com.asoul.asasfans.ui.viewmodel.MainViewModel
 import com.asoul.asasfans.utils.showShortToast
 import com.bumptech.glide.Glide
@@ -39,7 +40,7 @@ class VideoChildFragment : Fragment() {
     private val binding get() = _binding!!
     private val viewModel by activityViewModels<MainViewModel>()
 
-    private val videoPagingAdapter by lazy { VideoChildRvAdapter(this) }
+    private val videoAdapter by lazy { VideoChildRvAdapter(this) }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -53,7 +54,7 @@ class VideoChildFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.videoChildRv.layoutManager = LinearLayoutManager(activity)
-        binding.videoChildRv.adapter = videoPagingAdapter
+        binding.videoChildRv.adapter = videoAdapter
         binding.videoChildRv.addOnScrollListener(object : RecyclerView.OnScrollListener() {
 
             // 当滑动时不加载图片，当滑动停止时再加载图片。
@@ -66,7 +67,7 @@ class VideoChildFragment : Fragment() {
                 }
             }
         })
-        videoPagingAdapter.addLoadStateListener {
+        videoAdapter.addLoadStateListener {
             when (it.refresh) {
                 is LoadState.Error -> {
                     "加载错误，网络可能出现问题".showShortToast()
@@ -74,21 +75,34 @@ class VideoChildFragment : Fragment() {
                 else -> {}
             }
         }
+        // 获取当前时间戳，秒级
+        val timestamp = System.currentTimeMillis() / 1000
+        // 获取三天以内的所有作品，秒级
+        val fifteenDaysTimestamp = 25_9200L
         when (arguments?.getSerializable("which_video_fragment") as VideoChildFragmentEnum) {
             VideoChildFragmentEnum.FAN_VIDEO_FRAGMENT -> {
-                // 这只是演示，不是最终调用
-                getAsoulVideo("pubdate")
+                getAsoulVideo(
+                    order = "score",
+                    copyright = 1,
+                    advancedQuery = "pubdate.${timestamp - fifteenDaysTimestamp}+$timestamp.BETWEEN"
+                )
             }
             VideoChildFragmentEnum.HOT_CUT_VIDEO_FRAGMENT -> {
-                // 这只是演示，不是最终调用
-                getAsoulVideo("view")
+                getAsoulVideo(
+                    order = "score",
+                    copyright = 2,
+                    advancedQuery = "pubdate.${timestamp - fifteenDaysTimestamp}+$timestamp.BETWEEN"
+                )
             }
             VideoChildFragmentEnum.NEW_RELEASE_VIDEO_FRAGMENT -> {
-                // 这只是演示，不是最终调用
-                getAsoulVideo("score")
+                getAsoulVideo(
+                    order = "pubdate"
+                )
             }
             VideoChildFragmentEnum.HISTORY_RECOMMEND_VIDEO_FRAGMENT -> {
-
+                getAsoulVideo(
+                    order = "score"
+                )
             }
         }
     }
@@ -102,12 +116,13 @@ class VideoChildFragment : Fragment() {
         order: String,
         advancedQuery: String? = null,
         copyright: Int? = null,
-        tname: String? = null
+        tname: String? = null,
+        filter: ((VideoAdvancedSearchBean.Data.Result) -> Boolean)? = null
     ) {
         lifecycleScope.launch {
             viewModel
-                .getAsoulVideo(order, advancedQuery, copyright, tname)
-                .collect(videoPagingAdapter::submitData)
+                .getAsoulVideo(order, advancedQuery, copyright, tname, filter)
+                .collect(videoAdapter::submitData)
         }
     }
 }

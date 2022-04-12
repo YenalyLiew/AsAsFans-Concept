@@ -9,7 +9,6 @@ import com.asoul.asasfans.R
 import com.asoul.asasfans.databinding.FragmentVideoBinding
 import com.asoul.asasfans.ui.fragment.video.VideoChildAdapter
 import com.asoul.asasfans.ui.fragment.video.VideoChildFragmentEnum
-import com.asoul.asasfans.utils.showShortToast
 import com.google.android.material.tabs.TabLayoutMediator
 
 /**
@@ -38,8 +37,8 @@ class VideoFragment : Fragment() {
         (requireActivity() as AppCompatActivity).apply {
             setSupportActionBar(binding.videoToolbar)
         }
-
         binding.videoViewPager.adapter = VideoChildAdapter(this)
+
         TabLayoutMediator(binding.videoTabLayout, binding.videoViewPager) { tab, position ->
             when (position) {
                 VideoChildFragmentEnum.FAN_VIDEO_FRAGMENT.ordinal -> tab.setText(R.string.fan_video)
@@ -54,7 +53,6 @@ class VideoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
 
     override fun onDestroy() {

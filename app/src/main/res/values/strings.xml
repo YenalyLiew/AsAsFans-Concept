@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">AsAsFans</string>
+    <string name="a_soul">A-SOUL</string>
     <string name="video">视频</string>
     <string name="fan_art_pic">二创图片</string>
     <string name="record_studio">录音棚</string>
@@ -26,4 +27,20 @@
     <string name="refresh">刷新</string>
     <string name="open_in_browser">在浏览器中打开</string>
     <string name="asasfans_slogan">独属于一个魂的聚合平台</string>
+
+    <string name="ava">向晚</string>
+    <string name="bella">贝拉</string>
+    <string name="carol">珈乐</string>
+    <string name="diana">嘉然</string>
+    <string name="eileen">乃琳</string>
+    <string name="bella_carol">贝贝珈</string>
+    <string name="eileen_bella">乃贝</string>
+    <string name="diana_ava">嘉晚饭</string>
+    <string name="eileen_carol">琳狼</string>
+    <string name="carol_eileen">珈特琳</string>
+    <string name="eileen_ava">果丹皮</string>
+    <string name="eileen_diana">琳嘉女孩</string>
+    <string name="up">up主</string>
+    <string name="more">更多</string>
+    <string name="search">搜索</string>
 </resources>

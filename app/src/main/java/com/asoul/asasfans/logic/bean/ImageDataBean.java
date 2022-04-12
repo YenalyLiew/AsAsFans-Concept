@@ -1,5 +1,7 @@
 package com.asoul.asasfans.logic.bean;
 
+import androidx.annotation.NonNull;
+
 import java.util.List;
 
 /**
